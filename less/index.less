@@ -10,7 +10,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -49,11 +49,206 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+
+
+
+.center()	{
+	display: flex;
+	justify-content: space-between;
+}
+
+.custom-layout(@justify) {
+	display: flex;
+	justify-content: @justify;
+
+	}
+
+// -----Variables
+@custom-size:		30px;
+
+//-----Mix-ins
+
+
+//------ Navigation
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+
+		a {
+			
+			margin: 0px 50px;
+			background: lightgray;
+			border-radius: 20%;
+			color: black;
+			font-size: 20px;
+
+	}
+}
+//----- Name and objective
+.name-objective {
+	display: flex;
+	margin: 100px auto;
+	margin-left: 400px;
+	max-width: 1000px;
+	min-height: 300px;
+
+	
+
+
+	.avatar {
+
+
+		display: block;
+		resize: both;
+		min-width: 400px;
+	}
+	
+		h1{
+			padding-top: 100px;
+			font-size: 60px;
+			width: 900px;
+
+	}
+		h3 {
+			
+			font-size: 30px;
+			padding-top: 20px;
+			padding-left: 20px;
+			width: 400px;
+	}
+		h4{
+			font-size: 20px;
+			padding-left: 38px;
+			margin-top: 10px;
+			width:550px;
+	}
+
+}
+
+//-----Experience
+
+.experience-container{
+	display: flex;
+justify-content: space-evenly;
+		border-bottom: 1px dashed black;
+	h3{
+		margin: 20px;
+		padding-left: 100px;
+		font-size: 35px;
+	
+	}
+	.experience-job{
+		width: 700px;
+		margin: 40px;
+	}
+	.company-names{
+		font-size: 30px;
+		padding-left: 10px;
+	}
+
+	.company-job-title{
+		font-size: 25px;
+		padding-left: 20px;
+	}
+	.experience-list{
+		font-size: 20px;
+		padding-top: 10px;
+		list-style: square;
+		line-height: 27px;
+	}
+	}
+
+//-----Education
+
+.education-container {
+	display: flex;
+	justify-content: space-evenly;
+
+		h2{
+			margin: 20px;
+			margin-right: 40px;
+			padding-right: 340px;
+			font-size: 35px;
+		}
+		.schools{
+			margin: 30px;
+		}
+		.school-name{
+			font-size: 25px;
+		}
+		.educational-achievments {
+			font-size: 20px;
+			padding-right: 25px;
+		}
+}
+// --------Footer
+footer{
+		display: flex;
+		justify-content: center;
+	a{
+		margin: 30px;
+	}
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+	}
+
+	.fa:hover {
+		opacity: 0.5;
+	}
+
+
+	  /* Facebook */
+	.fa-facebook {
+		width: 50px;
+		height: 50px;
+		padding-bottom: 40px;
+		background: #3B5998;
+		color: white;
+		}
+
+	  /* Twitter */
+	.fa-twitter {
+		width: 50px;
+		height: 50px;
+		padding-bottom: 40px;
+		padding-right: 40px;
+		background: #55ACEE;
+		color: white;
+	}
+	/*snapchat*/
+
+	.fa-snapchat {
+		width: 50px;
+		height: 50px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+		background: yellow;
+		color: black;
+	}
+	/*	Linkedin */
+
+	.fa-linkedin{
+		width: 50px;
+		height: 60px;
+		padding-right: 40px;
+		background: black;
+		color: blue;
+	}
+}

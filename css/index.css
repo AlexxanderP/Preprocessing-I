@@ -1,1 +1,274 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation a {
+  margin: 0px 50px;
+  background: lightgray;
+  border-radius: 20%;
+  color: black;
+  font-size: 20px;
+}
+.name-objective {
+  display: flex;
+  margin: 100px auto;
+  margin-left: 400px;
+  max-width: 1000px;
+  min-height: 300px;
+}
+.name-objective .avatar {
+  display: block;
+  resize: both;
+  min-width: 400px;
+}
+.name-objective h1 {
+  padding-top: 100px;
+  font-size: 60px;
+  width: 900px;
+}
+.name-objective h3 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 400px;
+}
+.name-objective h4 {
+  font-size: 20px;
+  padding-left: 38px;
+  margin-top: 10px;
+  width: 550px;
+}
+.experience-container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px dashed black;
+}
+.experience-container h3 {
+  margin: 20px;
+  padding-left: 100px;
+  font-size: 35px;
+}
+.experience-container .experience-job {
+  width: 700px;
+  margin: 40px;
+}
+.experience-container .company-names {
+  font-size: 30px;
+  padding-left: 10px;
+}
+.experience-container .company-job-title {
+  font-size: 25px;
+  padding-left: 20px;
+}
+.experience-container .experience-list {
+  font-size: 20px;
+  padding-top: 10px;
+  list-style: square;
+  line-height: 27px;
+}
+.education-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.education-container h2 {
+  margin: 20px;
+  margin-right: 40px;
+  padding-right: 340px;
+  font-size: 35px;
+}
+.education-container .schools {
+  margin: 30px;
+}
+.education-container .school-name {
+  font-size: 25px;
+}
+.education-container .educational-achievments {
+  font-size: 20px;
+  padding-right: 25px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  /* Facebook */
+  /* Twitter */
+  /*snapchat*/
+  /*	Linkedin */
+}
+footer a {
+  margin: 30px;
+}
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+footer .fa:hover {
+  opacity: 0.5;
+}
+footer .fa-facebook {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 40px;
+  background: #3B5998;
+  color: white;
+}
+footer .fa-twitter {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  background: #55ACEE;
+  color: white;
+}
+footer .fa-snapchat {
+  width: 50px;
+  height: 50px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: yellow;
+  color: black;
+}
+footer .fa-linkedin {
+  width: 50px;
+  height: 60px;
+  padding-right: 40px;
+  background: black;
+  color: blue;
+}
