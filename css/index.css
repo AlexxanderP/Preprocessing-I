@@ -137,76 +137,88 @@ body {
   justify-content: space-around;
 }
 .navigation a {
-  border: 1px solid blue;
-  margin: 100px 20px;
-}
-.avatar {
-  margin: 40px 60px;
+  margin: 0px 50px;
+  background: lightgray;
+  border-radius: 20%;
+  color: black;
+  font-size: 20px;
 }
 .name-objective {
   display: flex;
-  border: 1px solid red;
-  margin-top: 40px;
-  margin-left: 40px;
-  flex-wrap: wrap;
-  flex-flow: column;
-  width: 600px;
+  margin: 100px auto;
+  margin-left: 400px;
+  max-width: 1000px;
+  min-height: 300px;
+}
+.name-objective .avatar {
+  display: block;
+  resize: both;
+  min-width: 400px;
 }
 .name-objective h1 {
+  padding-top: 100px;
   font-size: 60px;
+  width: 900px;
 }
 .name-objective h3 {
   font-size: 30px;
   padding-top: 20px;
   padding-left: 20px;
-  border: 1px solid black;
+  width: 400px;
 }
 .name-objective h4 {
   font-size: 20px;
   padding-left: 38px;
   margin-top: 10px;
+  width: 550px;
 }
 .experience-container {
-  border: 1px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px dashed black;
 }
 .experience-container h3 {
   margin: 20px;
+  padding-left: 100px;
   font-size: 35px;
 }
-.experience-job {
-  border: 2px solid green;
+.experience-container .experience-job {
   width: 700px;
-  margin: 50px;
+  margin: 40px;
 }
-.experience-job .company-names {
+.experience-container .company-names {
   font-size: 30px;
   padding-left: 10px;
 }
-.experience-job .company-job-title {
+.experience-container .company-job-title {
   font-size: 25px;
   padding-left: 20px;
 }
-.experience-job .experience-list {
+.experience-container .experience-list {
   font-size: 20px;
+  padding-top: 10px;
+  list-style: square;
+  line-height: 27px;
 }
 .education-container {
-  border: 1px solid orange;
   display: flex;
-  flex-flow: column;
+  justify-content: space-evenly;
 }
 .education-container h2 {
   margin: 20px;
+  margin-right: 40px;
+  padding-right: 340px;
   font-size: 35px;
 }
 .education-container .schools {
   margin: 30px;
-  border: 1px solid pink;
 }
 .education-container .school-name {
   font-size: 25px;
 }
 .education-container .educational-achievments {
   font-size: 20px;
+  padding-right: 25px;
 }
 footer {
   display: flex;
@@ -222,9 +234,10 @@ footer a {
 footer .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 footer .fa:hover {
   opacity: 0.5;
