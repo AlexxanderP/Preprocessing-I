@@ -49,8 +49,6 @@ dl,
 dt,
 dd,
 ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -133,4 +131,131 @@ table {
 html,
 body {
   height: 100%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation a {
+  border: 1px solid blue;
+  margin: 100px 20px;
+}
+.avatar {
+  margin: 40px 60px;
+}
+.name-objective {
+  display: flex;
+  border: 1px solid red;
+  margin-top: 40px;
+  margin-left: 40px;
+  flex-wrap: wrap;
+  flex-flow: column;
+  width: 600px;
+}
+.name-objective h1 {
+  font-size: 60px;
+}
+.name-objective h3 {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+.name-objective h4 {
+  font-size: 20px;
+  padding-left: 38px;
+  margin-top: 10px;
+}
+.experience-container {
+  border: 1px solid blue;
+}
+.experience-container h3 {
+  margin: 20px;
+  font-size: 35px;
+}
+.experience-job {
+  border: 2px solid green;
+  width: 700px;
+  margin: 50px;
+}
+.experience-job .company-names {
+  font-size: 30px;
+  padding-left: 10px;
+}
+.experience-job .company-job-title {
+  font-size: 25px;
+  padding-left: 20px;
+}
+.experience-job .experience-list {
+  font-size: 20px;
+}
+.education-container {
+  border: 1px solid orange;
+  display: flex;
+  flex-flow: column;
+}
+.education-container h2 {
+  margin: 20px;
+  font-size: 35px;
+}
+.education-container .schools {
+  margin: 30px;
+  border: 1px solid pink;
+}
+.education-container .school-name {
+  font-size: 25px;
+}
+.education-container .educational-achievments {
+  font-size: 20px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  /* Facebook */
+  /* Twitter */
+  /*snapchat*/
+  /*	Linkedin */
+}
+footer a {
+  margin: 30px;
+}
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+footer .fa:hover {
+  opacity: 0.5;
+}
+footer .fa-facebook {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 40px;
+  background: #3B5998;
+  color: white;
+}
+footer .fa-twitter {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  background: #55ACEE;
+  color: white;
+}
+footer .fa-snapchat {
+  width: 50px;
+  height: 50px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: yellow;
+  color: black;
+}
+footer .fa-linkedin {
+  width: 50px;
+  height: 60px;
+  padding-right: 40px;
+  background: black;
+  color: blue;
 }
